@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro to the MCAT | PreMed Bros</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* Branding Kit & Color Variables */
+    :root {
+      --primary: #1a237e;    /* Indigo Dark */
+      --secondary: #ffca28;  /* Amber Accent */
+      --accent: #ffffff;     /* White */
+      --bg: #f5f5f5;         /* Light Grey Background */
+      --text: #212121;       /* Dark Grey Text */
+      --card-bg: #ffffff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: transparent;
+      z-index: 100;
+    }
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+    }
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+    header {
+      height: 100vh;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      color: var(--accent);
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.25rem;
+      max-width: 600px;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+    }
+    .card {
+      background: var(--card-bg);
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card h3 {
+      margin-bottom: 16px;
+      color: var(--primary);
+    }
+    .cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .cta-btn {
+      display: inline-block;
+      padding: 16px 36px;
+      background: var(--primary);
+      color: var(--accent);
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: opacity 0.3s;
+    }
+    .cta-btn:hover {
+      opacity: 0.9;
+    }
+    footer {
+      background: #1e1e1e;
+      color: #ffffff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    footer p {
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">PreMed Bros</div>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#structure">Exam Structure</a></li>
+      <li><a href="#tips">Tips & Resources</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Welcome to Your MCAT Journey</h1>
+    <p>Master the Medical College Admission Test with expert guidance, structured study plans, and proven strategies to achieve your dream score.</p>
+  </header>
+
+  <!-- Overview Section -->
+  <section id="overview">
+    <h2>What is the MCAT?</h2>
+    <p>The MCAT is a standardized exam required for admission to most medical schools in the United States and Canada. It assesses your knowledge in Biological and Biochemical Foundations, Chemical and Physical Foundations, Psychological, Social, and Biological Foundations, and Critical Analysis & Reasoning Skills.</p>
+  </section>
+
+  <!-- Exam Structure Section -->
+  <section id="structure">
+    <h2>Exam Structure</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Biological & Biochemical Foundations</h3>
+        <p>95 questions | 95 minutes</p>
+      </div>
+      <div class="card">
+        <h3>Chemical & Physical Foundations</h3>
+        <p>95 questions | 95 minutes</p>
+      </div>
+      <div class="card">
+        <h3>Psychological, Social, & Biological Foundations</h3>
+        <p>95 questions | 95 minutes</p>
+      </div>
+      <div class="card">
+        <h3>Critical Analysis & Reasoning Skills</h3>
+        <p>53 questions | 90 minutes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tips Section -->
+  <section id="tips">
+    <h2>Top Study Tips</h2>
+    <ul>
+      <li>Begin your preparation 6+ months in advance.</li>
+      <li>Create a balanced study schedule covering all sections equally.</li>
+      <li>Use active learning: flashcards, practice passages, and teaching concepts.</li>
+      <li>Regularly take full-length practice exams under timed conditions.</li>
+      <li>Review your mistakes thoroughly to identify and address weak areas.</li>
+    </ul>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Ready to Get Started?</h2>
+    <a href="/signup" class="cta-btn">Join Our Full MCAT Prep Program</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 PreMed Bros. All rights reserved.</p>
+  </footer>
+</body>
+</html>
