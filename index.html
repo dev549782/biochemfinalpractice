@@ -1,212 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Intro to the MCAT | PreMed Bros</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
-    /* Branding Kit & Color Variables */
-    :root {
-      --primary: #1a237e;    /* Indigo Dark */
-      --secondary: #ffca28;  /* Amber Accent */
-      --accent: #ffffff;     /* White */
-      --bg: #f5f5f5;         /* Light Grey Background */
-      --text: #212121;       /* Dark Grey Text */
-      --card-bg: #ffffff;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    nav {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      background: transparent;
-      z-index: 100;
-    }
-    nav .logo {
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: var(--accent);
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 24px;
-    }
-    nav a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-      transition: opacity 0.3s;
-    }
-    nav a:hover {
-      opacity: 0.8;
-    }
-    header {
-      height: 100vh;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 0 20px;
-      color: var(--accent);
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      letter-spacing: 1px;
-    }
-    header p {
-      font-size: 1.25rem;
-      max-width: 600px;
-    }
-    section {
-      padding: 80px 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 40px;
-    }
-    .card {
-      background: var(--card-bg);
-      padding: 24px;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-8px);
-    }
-    .card h3 {
-      margin-bottom: 16px;
-      color: var(--primary);
-    }
-    .cta {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .cta-btn {
-      display: inline-block;
-      padding: 16px 36px;
-      background: var(--primary);
-      color: var(--accent);
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: opacity 0.3s;
-    }
-    .cta-btn:hover {
-      opacity: 0.9;
-    }
-    footer {
-      background: #1e1e1e;
-      color: #ffffff;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    footer p {
-      font-size: 0.9rem;
-    }
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.5rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">PreMed Bros</div>
-    <ul>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#structure">Exam Structure</a></li>
-      <li><a href="#tips">Tips & Resources</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
-  <header>
-    <h1>Welcome to Your MCAT Journey</h1>
-    <p>Master the Medical College Admission Test with expert guidance, structured study plans, and proven strategies to achieve your dream score.</p>
-  </header>
-
-  <!-- Overview Section -->
-  <section id="overview">
-    <h2>What is the MCAT?</h2>
-    <p>The MCAT is a standardized exam required for admission to most medical schools in the United States and Canada. It assesses your knowledge in Biological and Biochemical Foundations, Chemical and Physical Foundations, Psychological, Social, and Biological Foundations, and Critical Analysis & Reasoning Skills.</p>
-  </section>
-
-  <!-- Exam Structure Section -->
-  <section id="structure">
-    <h2>Exam Structure</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Biological & Biochemical Foundations</h3>
-        <p>95 questions | 95 minutes</p>
-      </div>
-      <div class="card">
-        <h3>Chemical & Physical Foundations</h3>
-        <p>95 questions | 95 minutes</p>
-      </div>
-      <div class="card">
-        <h3>Psychological, Social, & Biological Foundations</h3>
-        <p>95 questions | 95 minutes</p>
-      </div>
-      <div class="card">
-        <h3>Critical Analysis & Reasoning Skills</h3>
-        <p>53 questions | 90 minutes</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tips Section -->
-  <section id="tips">
-    <h2>Top Study Tips</h2>
-    <ul>
-      <li>Begin your preparation 6+ months in advance.</li>
-      <li>Create a balanced study schedule covering all sections equally.</li>
-      <li>Use active learning: flashcards, practice passages, and teaching concepts.</li>
-      <li>Regularly take full-length practice exams under timed conditions.</li>
-      <li>Review your mistakes thoroughly to identify and address weak areas.</li>
-    </ul>
-  </section>
-
-  <!-- Call to Action -->
-  <section class="cta">
-    <h2>Ready to Get Started?</h2>
-    <a href="/signup" class="cta-btn">Join Our Full MCAT Prep Program</a>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 PreMed Bros. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-=======
 <section>
   <h2>Module 1: Thermodynamics</h2>
 
@@ -1252,4 +1043,1062 @@
     </details>
   </li>
 </ol>
->>>>>>> 76e1c534f405d3e4e68b149e2bca14d23c702700
+<section>
+  <h2>Module 8: Enzyme Kinetics</h2>
+  <ol start="71">
+    <li>
+      Which of the following reaction pathways could this reaction coordinate represent?
+      <ul>
+        <li>A) E + S ⇌ E + P</li>
+        <li>B) E + S ⇌ ES ⇌ E + P</li>
+        <li>C) E + S ⇌ ES ⇌ EI ⇌ E + P</li>
+        <li>D) E + S ⇌ ES ⇌ EI ⇌ EP ⇌ E + P</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> D<br>
+        <strong>Explanation:</strong> The pathway with the most intermediate states best matches the multi-step reaction coordinate shown.</p>
+      </details>
+    </li>
+
+    <li>
+      Which variable is the dependent variable in the Lineweaver-Burk plot?
+      <ul>
+        <li>A) 1/[S]</li>
+        <li>B) 1/v₀</li>
+        <li>C) Vmax</li>
+        <li>D) Km</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> The y-axis of the Lineweaver-Burk plot is 1/v₀, which is the dependent variable.</p>
+      </details>
+    </li>
+
+    <li>
+      Which of the following is NOT a true assumption of Michaelis-Menten kinetics?
+      <ul>
+        <li>A) [S] >> [E]</li>
+        <li>B) The product is reversible</li>
+        <li>C) Steady-state approximation holds</li>
+        <li>D) Initial velocity is measured</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> M-M assumes product formation is effectively irreversible during initial velocity measurements.</p>
+      </details>
+    </li>
+
+    <li>
+      What does the y-intercept represent in the Lineweaver-Burk plot?
+      <ul>
+        <li>A) Km</li>
+        <li>B) 1/Km</li>
+        <li>C) 1/Vmax</li>
+        <li>D) –1/Km</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> The y-intercept of a Lineweaver-Burk plot is equal to 1/Vmax.</p>
+      </details>
+    </li>
+
+    <li>
+      Which type of inhibition increases the apparent Km but does not affect Vmax?
+      <ul>
+        <li>A) Competitive</li>
+        <li>B) Uncompetitive</li>
+        <li>C) Mixed</li>
+        <li>D) Noncompetitive</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> A<br>
+        <strong>Explanation:</strong> Competitive inhibitors bind to the active site and raise Km without changing Vmax.</p>
+      </details>
+    </li>
+
+    <li>
+      Which enzyme displays cooperative kinetics instead of Michaelis-Menten behavior?
+      <ul>
+        <li>A) Hexokinase</li>
+        <li>B) Aspartate transcarbamoylase</li>
+        <li>C) Sucrase</li>
+        <li>D) DNA polymerase</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> Aspartate transcarbamoylase shows sigmoidal kinetics due to allosteric regulation.</p>
+      </details>
+    </li>
+
+    <li>
+      Which plot best distinguishes between competitive and uncompetitive inhibition?
+      <ul>
+        <li>A) Michaelis-Menten plot</li>
+        <li>B) Hanes-Woolf plot</li>
+        <li>C) Lineweaver-Burk plot</li>
+        <li>D) Eadie-Hofstee plot</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> Lineweaver-Burk plots clearly show differences in slope and y-intercepts due to inhibitors.</p>
+      </details>
+    </li>
+
+    <li>
+      What happens to Km and Vmax in uncompetitive inhibition?
+      <ul>
+        <li>A) Km increases; Vmax stays the same</li>
+        <li>B) Km stays the same; Vmax decreases</li>
+        <li>C) Both Km and Vmax increase</li>
+        <li>D) Both Km and Vmax decrease</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> D<br>
+        <strong>Explanation:</strong> In uncompetitive inhibition, the inhibitor binds only to the ES complex, lowering both Km and Vmax.</p>
+      </details>
+    </li>
+
+    <li>
+      Which inhibitor has the lowest IC₅₀ based on the following values: A) 2.7 μM, B) 0.6 μM, C) 1.0 μM, D) 1.6 μM?
+      <ul>
+        <li>A) Inhibitor A</li>
+        <li>B) Inhibitor B</li>
+        <li>C) Inhibitor C</li>
+        <li>D) Inhibitor D</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> IC₅₀ is the concentration needed to inhibit 50% of activity; lower value = stronger inhibitor.</p>
+      </details>
+    </li>
+
+    <li>
+      What is the slope in the Lineweaver-Burk plot of a competitive inhibitor?
+      <ul>
+        <li>A) Km/Vmax</li>
+        <li>B) 1/Vmax</li>
+        <li>C) Km(1 + [I]/Ki)/Vmax</li>
+        <li>D) Vmax/Km</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> In competitive inhibition, the slope increases with inhibitor concentration due to the factor (1 + [I]/Ki).</p>
+      </details>
+    </li>
+  </ol>
+</section>
+<section>
+  <h2>Module 9: Carbohydrates</h2>
+  <ol start="81">
+    <li>
+      Which of the following best describes a ketose?
+      <ul>
+        <li>A) A sugar with an aldehyde group</li>
+        <li>B) A sugar with a ketone group</li>
+        <li>C) A sugar with multiple carboxylic acids</li>
+        <li>D) A sugar with no carbonyl group</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> Ketoses are carbohydrates that contain a ketone functional group, typically at carbon 2.</p>
+      </details>
+    </li>
+
+    <li>
+      What makes a sugar a “reducing sugar”?
+      <ul>
+        <li>A) It contains a carboxyl group</li>
+        <li>B) It can be oxidized at its non-anomeric carbon</li>
+        <li>C) It has a free aldehyde or ketone group</li>
+        <li>D) It cannot form a ring structure</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> Reducing sugars have a free anomeric carbon that can open into a linear form with a reactive aldehyde or ketone group.</p>
+      </details>
+    </li>
+
+    <li>
+      Which carbohydrate is the enantiomer of D-glucose?
+      <ul>
+        <li>A) D-galactose</li>
+        <li>B) L-glucose</li>
+        <li>C) D-fructose</li>
+        <li>D) L-fructose</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> L-glucose is the mirror image of D-glucose and is its enantiomer.</p>
+      </details>
+    </li>
+
+    <li>
+      Which disaccharide is composed of glucose and fructose?
+      <ul>
+        <li>A) Lactose</li>
+        <li>B) Sucrose</li>
+        <li>C) Maltose</li>
+        <li>D) Cellobiose</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> Sucrose is a disaccharide made of glucose and fructose linked via a glycosidic bond.</p>
+      </details>
+    </li>
+
+    <li>
+      Which of the following describes the glycosidic linkage in maltose?
+      <ul>
+        <li>A) α(1→4) linkage between glucose units</li>
+        <li>B) β(1→4) linkage between galactose and glucose</li>
+        <li>C) α(1→2) linkage between glucose and fructose</li>
+        <li>D) β(1→6) linkage between glucose and mannose</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> A<br>
+        <strong>Explanation:</strong> Maltose consists of two glucose molecules linked via an α(1→4) glycosidic bond.</p>
+      </details>
+    </li>
+
+    <li>
+      What type of bond is cleaved by amylase during starch digestion?
+      <ul>
+        <li>A) α(1→4) glycosidic bonds</li>
+        <li>B) β(1→4) glycosidic bonds</li>
+        <li>C) α(1→6) glycosidic bonds</li>
+        <li>D) Disulfide bonds</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> A<br>
+        <strong>Explanation:</strong> Amylase hydrolyzes α(1→4) bonds in polysaccharides like amylose and amylopectin.</p>
+      </details>
+    </li>
+
+    <li>
+      Which carbohydrate is a component of DNA?
+      <ul>
+        <li>A) Ribose</li>
+        <li>B) Glucose</li>
+        <li>C) Deoxyribose</li>
+        <li>D) Galactose</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> Deoxyribose is the pentose sugar found in DNA nucleotides.</p>
+      </details>
+    </li>
+
+    <li>
+      What distinguishes cellulose from starch?
+      <ul>
+        <li>A) Presence of ketoses</li>
+        <li>B) Cellulose has α-glycosidic linkages</li>
+        <li>C) Cellulose has β(1→4) linkages; starch has α(1→4)</li>
+        <li>D) Cellulose is branched, starch is not</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> Cellulose has β(1→4) linkages which are indigestible by humans; starch has α(1→4) bonds.</p>
+      </details>
+    </li>
+
+    <li>
+      Which sugar alcohol is commonly used as a low-calorie sweetener?
+      <ul>
+        <li>A) Glucose</li>
+        <li>B) Sorbitol</li>
+        <li>C) Fructose</li>
+        <li>D) Lactose</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> Sorbitol is a reduced form of glucose and used as a sugar substitute in many diet products.</p>
+      </details>
+    </li>
+
+    <li>
+      What type of isomers are glucose and galactose?
+      <ul>
+        <li>A) Enantiomers</li>
+        <li>B) Epimers</li>
+        <li>C) Anomers</li>
+        <li>D) Tautomers</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> Glucose and galactose differ only in the configuration around carbon 4, making them epimers.</p>
+      </details>
+    </li>
+  </ol>
+</section>
+<section>
+  <h2>Module 10: Nucleic Acids</h2>
+  <ol start="91">
+    <li>
+      Which sugar is found in DNA?
+      <ul>
+        <li>A) Ribose</li>
+        <li>B) Glucose</li>
+        <li>C) Deoxyribose</li>
+        <li>D) Fructose</li>
+      </ul>
+      <details><summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> DNA contains deoxyribose, which lacks a hydroxyl group on the 2’ carbon.</p>
+      </details>
+    </li>
+    <li>
+      Which nitrogenous base pairs with cytosine in DNA?
+      <ul>
+        <li>A) Uracil</li>
+        <li>B) Thymine</li>
+        <li>C) Adenine</li>
+        <li>D) Guanine</li>
+      </ul>
+      <details><summary>Show Answer</summary>
+        <p><strong>Answer:</strong> D<br>
+        <strong>Explanation:</strong> In DNA, guanine forms three hydrogen bonds with cytosine.</p>
+      </details>
+    </li>
+    <li>
+      What type of bond joins nucleotides in a strand of DNA?
+      <ul>
+        <li>A) Glycosidic bond</li>
+        <li>B) Peptide bond</li>
+        <li>C) Phosphodiester bond</li>
+        <li>D) Hydrogen bond</li>
+      </ul>
+      <details><summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> Phosphodiester bonds connect the 3’ hydroxyl of one sugar to the 5’ phosphate of the next.</p>
+      </details>
+    </li>
+    <li>
+      What is the difference between DNA and RNA?
+      <ul>
+        <li>A) RNA contains thymine; DNA contains uracil</li>
+        <li>B) DNA is single-stranded</li>
+        <li>C) RNA has a hydroxyl group on the 2’ carbon</li>
+        <li>D) DNA contains ribose sugar</li>
+      </ul>
+      <details><summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> RNA has ribose, which includes a 2’ hydroxyl group; DNA lacks this group.</p>
+      </details>
+    </li>
+    <li>
+      Which base is found in RNA but not in DNA?
+      <ul>
+        <li>A) Cytosine</li>
+        <li>B) Uracil</li>
+        <li>C) Guanine</li>
+        <li>D) Thymine</li>
+      </ul>
+      <details><summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> RNA contains uracil instead of thymine.</p>
+      </details>
+    </li>
+    <li>
+      What enzyme synthesizes RNA during transcription?
+      <ul>
+        <li>A) DNA polymerase</li>
+        <li>B) RNA polymerase</li>
+        <li>C) Ligase</li>
+        <li>D) Helicase</li>
+      </ul>
+      <details><summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> RNA polymerase creates RNA by reading the DNA template strand.</p>
+      </details>
+    </li>
+    <li>
+      What is the role of tRNA in translation?
+      <ul>
+        <li>A) Synthesizes mRNA</li>
+        <li>B) Delivers amino acids to ribosomes</li>
+        <li>C) Forms the ribosome structure</li>
+        <li>D) Breaks peptide bonds</li>
+      </ul>
+      <details><summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> tRNA brings specific amino acids to the ribosome based on codon pairing.</p>
+      </details>
+    </li>
+    <li>
+      Which direction is DNA synthesized?
+      <ul>
+        <li>A) 3’ to 5’</li>
+        <li>B) 5’ to 3’</li>
+        <li>C) Random</li>
+        <li>D) Only in short fragments</li>
+      </ul>
+      <details><summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> DNA polymerase adds nucleotides to the 3’ end, so synthesis proceeds 5’ to 3’.</p>
+      </details>
+    </li>
+    <li>
+      Which of the following is a purine base?
+      <ul>
+        <li>A) Thymine</li>
+        <li>B) Cytosine</li>
+        <li>C) Adenine</li>
+        <li>D) Uracil</li>
+      </ul>
+      <details><summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> Adenine and guanine are purines; they have two-ring structures.</p>
+      </details>
+    </li>
+    <li>
+      What process copies DNA before cell division?
+      <ul>
+        <li>A) Transcription</li>
+        <li>B) Replication</li>
+        <li>C) Translation</li>
+        <li>D) Recombination</li>
+      </ul>
+      <details><summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> Replication produces identical copies of DNA during S phase of the cell cycle.</p>
+      </details>
+    </li>
+  </ol>
+</section>
+<section>
+  <h2>Module 11: Lipids and Membranes</h2>
+  <ol start="101">
+    <li>
+      Which type of lipid is the primary structural component of biological membranes?
+      <ul>
+        <li>A) Triacylglycerols</li>
+        <li>B) Steroids</li>
+        <li>C) Phospholipids</li>
+        <li>D) Waxes</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> Phospholipids are amphipathic molecules that form bilayers, the main structure of cell membranes.</p>
+      </details>
+    </li>
+
+    <li>
+      What feature allows phospholipids to form bilayers in aqueous environments?
+      <ul>
+        <li>A) Their rigid carbon rings</li>
+        <li>B) Their amphipathic nature</li>
+        <li>C) Their high polarity</li>
+        <li>D) Their hydrophobic head group</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> Phospholipids contain both hydrophilic heads and hydrophobic tails, allowing them to arrange into bilayers.</p>
+      </details>
+    </li>
+
+    <li>
+      Which of the following increases membrane fluidity?
+      <ul>
+        <li>A) Longer fatty acid chains</li>
+        <li>B) Higher cholesterol content at all temperatures</li>
+        <li>C) Unsaturated fatty acids with cis double bonds</li>
+        <li>D) Saturated fatty acids</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> Cis double bonds introduce kinks in fatty acid chains, preventing tight packing and increasing fluidity.</p>
+      </details>
+    </li>
+
+    <li>
+      What role does cholesterol play in membranes?
+      <ul>
+        <li>A) It makes membranes impermeable</li>
+        <li>B) It prevents membrane protein movement</li>
+        <li>C) It stabilizes membrane fluidity across temperature ranges</li>
+        <li>D) It replaces phospholipids in lipid rafts</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> Cholesterol makes membranes more rigid at high temperatures and more fluid at low temperatures.</p>
+      </details>
+    </li>
+
+    <li>
+      What kind of lipid is most abundant in adipose tissue for energy storage?
+      <ul>
+        <li>A) Phospholipids</li>
+        <li>B) Glycolipids</li>
+        <li>C) Triacylglycerols</li>
+        <li>D) Sphingolipids</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> Triacylglycerols are energy-rich storage lipids found in fat cells.</p>
+      </details>
+    </li>
+
+    <li>
+      Which of the following lipids contains a sphingosine backbone?
+      <ul>
+        <li>A) Phosphatidylcholine</li>
+        <li>B) Triacylglycerol</li>
+        <li>C) Cerebroside</li>
+        <li>D) Cholesterol</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> Cerebrosides are sphingolipids with a single sugar attached to a sphingosine backbone.</p>
+      </details>
+    </li>
+
+    <li>
+      What is a lipid raft?
+      <ul>
+        <li>A) A site of lipid degradation</li>
+        <li>B) A membrane region rich in proteins and carbohydrates</li>
+        <li>C) A fluid, disordered membrane area</li>
+        <li>D) A microdomain rich in cholesterol and sphingolipids</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> D<br>
+        <strong>Explanation:</strong> Lipid rafts are more ordered membrane microdomains that cluster signaling molecules.</p>
+      </details>
+    </li>
+
+    <li>
+      Which lipid is a precursor to steroid hormones?
+      <ul>
+        <li>A) Phosphatidylserine</li>
+        <li>B) Cholesterol</li>
+        <li>C) Palmitate</li>
+        <li>D) Ceramide</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> Cholesterol serves as the base molecule for synthesizing all steroid hormones.</p>
+      </details>
+    </li>
+
+    <li>
+      Which of the following is a common head group in phospholipids?
+      <ul>
+        <li>A) Glycerol</li>
+        <li>B) Glucose</li>
+        <li>C) Choline</li>
+        <li>D) Palmitate</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> Choline is part of the head group in phosphatidylcholine, a major membrane phospholipid.</p>
+      </details>
+    </li>
+
+    <li>
+      What type of interaction holds the lipid bilayer together?
+      <ul>
+        <li>A) Ionic bonds</li>
+        <li>B) Covalent bonds</li>
+        <li>C) Hydrophobic interactions</li>
+        <li>D) Hydrogen bonds</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> The bilayer is stabilized by hydrophobic interactions among fatty acid tails.</p>
+      </details>
+    </li>
+  </ol>
+</section>
+<section>
+  <h2>Module 12: Membrane Transport</h2>
+  <ol start="111">
+    <li>
+      What defines passive transport across a membrane?
+      <ul>
+        <li>A) Requires ATP hydrolysis</li>
+        <li>B) Moves solutes against their gradient</li>
+        <li>C) Moves solutes down their gradient without energy input</li>
+        <li>D) Only occurs through ion channels</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> Passive transport occurs without energy, moving substances down their concentration gradient.</p>
+      </details>
+    </li>
+
+    <li>
+      Which of the following uses energy directly from ATP?
+      <ul>
+        <li>A) Facilitated diffusion</li>
+        <li>B) Primary active transport</li>
+        <li>C) Secondary active transport</li>
+        <li>D) Osmosis</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> Primary active transport uses ATP hydrolysis directly to move substances against their gradient.</p>
+      </details>
+    </li>
+
+    <li>
+      Which type of transport involves coupling to another ion's gradient?
+      <ul>
+        <li>A) Passive diffusion</li>
+        <li>B) Primary active transport</li>
+        <li>C) Secondary active transport</li>
+        <li>D) Osmosis</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> Secondary active transport uses the energy stored in an ion gradient established by primary active transport.</p>
+      </details>
+    </li>
+
+    <li>
+      The sodium-glucose symporter is an example of:
+      <ul>
+        <li>A) Passive transporter</li>
+        <li>B) Uniporter</li>
+        <li>C) Symporter using secondary active transport</li>
+        <li>D) Antiporter</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> This symporter moves glucose into the cell by coupling to the inward movement of sodium ions.</p>
+      </details>
+    </li>
+
+    <li>
+      Which of the following is true of ion channels?
+      <ul>
+        <li>A) They are always open</li>
+        <li>B) They require ATP</li>
+        <li>C) They allow rapid ion movement down a gradient</li>
+        <li>D) They bind ions and undergo conformational change</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> Ion channels open to allow specific ions to flow quickly down their electrochemical gradients.</p>
+      </details>
+    </li>
+
+    <li>
+      What happens to a red blood cell placed in a hypotonic solution?
+      <ul>
+        <li>A) It shrinks</li>
+        <li>B) It remains unchanged</li>
+        <li>C) It swells and may burst</li>
+        <li>D) It forms ion channels</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> In a hypotonic solution, water enters the cell via osmosis, potentially causing lysis.</p>
+      </details>
+    </li>
+
+    <li>
+      What best describes a uniporter?
+      <ul>
+        <li>A) A protein that moves two substances in opposite directions</li>
+        <li>B) A protein that uses ATP</li>
+        <li>C) A protein that transports one substance down its gradient</li>
+        <li>D) A protein that forms a pore for any ion</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> Uniporters move a single type of molecule in one direction, typically down its concentration gradient.</p>
+      </details>
+    </li>
+
+    <li>
+      What distinguishes antiporters from symporters?
+      <ul>
+        <li>A) Symporters use ATP, antiporters do not</li>
+        <li>B) Antiporters move both substances in the same direction</li>
+        <li>C) Symporters move substances in opposite directions</li>
+        <li>D) Antiporters move substances in opposite directions</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> D<br>
+        <strong>Explanation:</strong> Antiporters transport two substances in opposite directions across the membrane.</p>
+      </details>
+    </li>
+
+    <li>
+      What drives water movement across membranes?
+      <ul>
+        <li>A) Sodium gradients</li>
+        <li>B) ATP</li>
+        <li>C) Osmotic pressure</li>
+        <li>D) Electrical charge</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> Water moves via osmosis from areas of low solute concentration to high solute concentration due to osmotic pressure.</p>
+      </details>
+    </li>
+
+    <li>
+      Which of the following would most likely increase the rate of facilitated diffusion?
+      <ul>
+        <li>A) More ATP</li>
+        <li>B) More carrier proteins in the membrane</li>
+        <li>C) Decreased solute gradient</li>
+        <li>D) Less membrane fluidity</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> Increasing the number of transporters increases the Vmax of facilitated diffusion.</p>
+      </details>
+    </li>
+  </ol>
+</section>
+<section>
+  <h2>Module 13: Biosignaling</h2>
+  <ol start="121">
+    <li>
+      What type of receptor is a G protein-coupled receptor (GPCR)?
+      <ul>
+        <li>A) Ion channel</li>
+        <li>B) Receptor tyrosine kinase</li>
+        <li>C) Seven-transmembrane domain protein</li>
+        <li>D) Enzyme-linked receptor</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> GPCRs span the membrane seven times and activate intracellular G proteins when ligands bind.</p>
+      </details>
+    </li>
+
+    <li>
+      Which second messenger is produced by adenylyl cyclase?
+      <ul>
+        <li>A) cAMP</li>
+        <li>B) IP₃</li>
+        <li>C) DAG</li>
+        <li>D) Ca²⁺</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> A<br>
+        <strong>Explanation:</strong> Adenylyl cyclase converts ATP into cyclic AMP (cAMP), a major second messenger in GPCR signaling.</p>
+      </details>
+    </li>
+
+    <li>
+      What does cAMP activate in the cell?
+      <ul>
+        <li>A) Protein kinase A</li>
+        <li>B) Protein kinase C</li>
+        <li>C) Phospholipase C</li>
+        <li>D) Tyrosine kinase</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> A<br>
+        <strong>Explanation:</strong> cAMP binds and activates PKA, which phosphorylates various downstream targets.</p>
+      </details>
+    </li>
+
+    <li>
+      Which enzyme cleaves PIP₂ into IP₃ and DAG?
+      <ul>
+        <li>A) Adenylyl cyclase</li>
+        <li>B) Phospholipase C</li>
+        <li>C) Protein kinase A</li>
+        <li>D) PI3K</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> Phospholipase C hydrolyzes PIP₂ into the second messengers IP₃ and DAG.</p>
+      </details>
+    </li>
+
+    <li>
+      What is the function of IP₃ in signaling?
+      <ul>
+        <li>A) Activates PKA</li>
+        <li>B) Opens calcium channels in the endoplasmic reticulum</li>
+        <li>C) Converts ATP to cAMP</li>
+        <li>D) Phosphorylates tyrosine residues</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> IP₃ binds to receptors on the ER, triggering release of calcium into the cytosol.</p>
+      </details>
+    </li>
+
+    <li>
+      What does calcium bind to for intracellular signaling?
+      <ul>
+        <li>A) PKA</li>
+        <li>B) Calmodulin</li>
+        <li>C) DAG</li>
+        <li>D) CREB</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> Calcium ions bind calmodulin, which then activates various calcium-dependent enzymes.</p>
+      </details>
+    </li>
+
+    <li>
+      What happens when a GPCR activates a G protein?
+      <ul>
+        <li>A) GTP is hydrolyzed</li>
+        <li>B) GDP is exchanged for GTP on the Gα subunit</li>
+        <li>C) ATP is converted to cAMP</li>
+        <li>D) IP₃ is formed</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> Upon activation, the Gα subunit releases GDP and binds GTP to become active.</p>
+      </details>
+    </li>
+
+    <li>
+      Which signaling mechanism involves receptor dimerization and autophosphorylation?
+      <ul>
+        <li>A) GPCR</li>
+        <li>B) Receptor tyrosine kinase (RTK)</li>
+        <li>C) Ion channel</li>
+        <li>D) Gated transporter</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> RTKs dimerize when a ligand binds, leading to autophosphorylation of tyrosine residues.</p>
+      </details>
+    </li>
+
+    <li>
+      Which pathway is activated by insulin binding to its receptor?
+      <ul>
+        <li>A) GPCR → PKA</li>
+        <li>B) RTK → PI3K → Akt</li>
+        <li>C) cAMP → CREB</li>
+        <li>D) PLC → IP₃</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> Insulin binds to an RTK and activates the PI3K-Akt pathway, leading to glucose uptake and gene regulation.</p>
+      </details>
+    </li>
+
+    <li>
+      What terminates a GPCR signaling event?
+      <ul>
+        <li>A) Degradation of ATP</li>
+        <li>B) Binding of more ligand</li>
+        <li>C) Hydrolysis of GTP on the Gα subunit</li>
+        <li>D) Phosphorylation of the receptor</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> The Gα subunit has intrinsic GTPase activity and inactivates itself by converting GTP to GDP.</p>
+      </details>
+    </li>
+  </ol>
+</section>
+<section>
+  <h2>Module 14: Introduction to Metabolism</h2>
+  <ol start="131">
+    <li>
+      What is the main function of catabolic pathways?
+      <ul>
+        <li>A) Build complex molecules</li>
+        <li>B) Break down molecules to release energy</li>
+        <li>C) Store energy in glycogen</li>
+        <li>D) Absorb light energy</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> Catabolic pathways degrade macromolecules into smaller units, releasing energy stored in chemical bonds.</p>
+      </details>
+    </li>
+
+    <li>
+      What molecule is considered the main energy currency of the cell?
+      <ul>
+        <li>A) NADH</li>
+        <li>B) GTP</li>
+        <li>C) ATP</li>
+        <li>D) Glucose</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> ATP (adenosine triphosphate) provides the energy for most cellular processes.</p>
+      </details>
+    </li>
+
+    <li>
+      Which coenzyme is reduced during catabolic reactions to carry electrons?
+      <ul>
+        <li>A) FAD</li>
+        <li>B) NAD⁺</li>
+        <li>C) Coenzyme A</li>
+        <li>D) Biotin</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> NAD⁺ accepts electrons and is reduced to NADH, which can later be used in oxidative phosphorylation.</p>
+      </details>
+    </li>
+
+    <li>
+      What term describes reactions with a negative ΔG that release energy?
+      <ul>
+        <li>A) Exergonic</li>
+        <li>B) Endergonic</li>
+        <li>C) Isoenergetic</li>
+        <li>D) Reversible</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> A<br>
+        <strong>Explanation:</strong> Exergonic reactions release energy and occur spontaneously under standard conditions.</p>
+      </details>
+    </li>
+
+    <li>
+      Which pathway is central to both catabolism and anabolism, making it amphibolic?
+      <ul>
+        <li>A) Glycolysis</li>
+        <li>B) TCA cycle</li>
+        <li>C) β-oxidation</li>
+        <li>D) Electron transport chain</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> The TCA cycle breaks down carbon fuels and provides intermediates for biosynthesis.</p>
+      </details>
+    </li>
+
+    <li>
+      Which organ is the most metabolically active at rest?
+      <ul>
+        <li>A) Brain</li>
+        <li>B) Liver</li>
+        <li>C) Muscle</li>
+        <li>D) Kidney</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> A<br>
+        <strong>Explanation:</strong> The brain uses a large proportion of resting energy, mostly from glucose oxidation.</p>
+      </details>
+    </li>
+
+    <li>
+      What is the purpose of coupled reactions in metabolism?
+      <ul>
+        <li>A) To generate heat</li>
+        <li>B) To balance ATP production with NADPH usage</li>
+        <li>C) To make unfavorable reactions proceed using energy from favorable ones</li>
+        <li>D) To allow redox reactions in the cytoplasm</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> Energetically unfavorable reactions are driven forward by coupling them to ATP hydrolysis or other favorable reactions.</p>
+      </details>
+    </li>
+
+    <li>
+      Which of the following is a key regulatory mechanism of metabolic pathways?
+      <ul>
+        <li>A) Hydration</li>
+        <li>B) Allosteric regulation</li>
+        <li>C) Hydrolysis</li>
+        <li>D) Diffusion</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> B<br>
+        <strong>Explanation:</strong> Enzymes are often regulated allosterically to respond quickly to changes in cellular conditions.</p>
+      </details>
+    </li>
+
+    <li>
+      What is the role of NADPH in metabolism?
+      <ul>
+        <li>A) Oxidizes glucose in glycolysis</li>
+        <li>B) Serves as an energy source for ion pumps</li>
+        <li>C) Provides reducing power for biosynthetic reactions</li>
+        <li>D) Acts as a cofactor for the TCA cycle</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> NADPH is used in anabolic reactions like fatty acid synthesis and in antioxidant defense.</p>
+      </details>
+    </li>
+
+    <li>
+      What metabolic state is characterized by increased gluconeogenesis and fat mobilization?
+      <ul>
+        <li>A) Fed state</li>
+        <li>B) Post-absorptive state</li>
+        <li>C) Fasting state</li>
+        <li>D) Hyperinsulinemic state</li>
+      </ul>
+      <details>
+        <summary>Show Answer</summary>
+        <p><strong>Answer:</strong> C<br>
+        <strong>Explanation:</strong> During fasting, the body maintains blood glucose by synthesizing it from non-carbohydrate sources and mobilizing stored fats.</p>
+      </details>
+    </li>
+  </ol>
+</section>
